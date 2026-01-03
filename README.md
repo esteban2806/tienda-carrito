@@ -7,13 +7,13 @@ Pensado como **muestra de desarrollo** para publicar en **GitHub Pages**.
 
 ---
 **Vista Tienda (Cliente)**
-![Tienda](imagen/readme/02-tienda.png)
+![Tienda](img/readme/02-tienda.png)
 
 **Carrito (panel lateral)**
-![Carrito](imagen/readme/carrito.png)
+![Carrito](img/readme/carrito.png)
 
 **Panel Administrativo**
-![Admin](imagen/readme/04-admin.png)
+![Admin](img/readme/04-admin.png)
 
 
 ## Funcionalidades (Cliente / Tienda)
