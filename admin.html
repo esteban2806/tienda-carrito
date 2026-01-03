@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Admin - Tienda</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <span class="logo">⚙️</span>
+            <span class="logo">🛒</span>
+            <img class="logo-img" src="img/logo.png" alt="Arnold Web" />
+            <h1>Admin</h1>
+        </div>
+
+        <div class="actions">
+            <a class="btn btn-ghost" href="index.html">Volver a tienda</a>
+            <button id="logoutBtn" class="btn btn-ghost hidden">Salir</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Login -->
+        <section id="loginSection">
+            <h2 class="section-title">Acceso administrativo</h2>
+            <div class="card">
+                <div class="content">
+                    <p class="muted small">
+                        Demo sin backend. Seguridad básica (no usar en producción).
+                    </p>
+                    <label>
+                        Contraseña
+                        <input id="adminPassword" class="input" type="password" placeholder="admin123" />
+                    </label>
+                    <button id="loginBtn" class="btn btn-primary">Entrar</button>
+                    <p id="loginMsg" class="muted small"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panel -->
+        <section id="panelSection" class="hidden">
+            <h2 class="section-title">Productos</h2>
+
+            <div class="card">
+                <div class="content">
+                    <div class="two-col">
+                        <label>
+                            ID (único)
+                            <input id="p_id" class="input" placeholder="kid005" />
+                        </label>
+                        <label>
+                            Categoría
+                            <input id="p_category" class="input" placeholder="Ropa Niño" />
+                        </label>
+                    </div>
+
+                    <label>
+                        Nombre
+                        <input id="p_name" class="input" placeholder="Polera Niño" />
+                    </label>
+
+                    <div class="two-col">
+                        <label>
+                            Precio (S/)
+                            <input id="p_price" class="input" type="number" step="0.01" placeholder="59.90" />
+                        </label>
+                        <label>
+                            Stock
+                            <input id="p_stock" class="input" type="number" step="1" placeholder="20" />
+                        </label>
+                    </div>
+
+                    <label>
+                        Imagen (URL)
+                        <input id="p_image" class="input" placeholder="https://..." />
+                    </label>
+
+                    <label>
+                        Descripción
+                        <input id="p_desc" class="input" placeholder="Descripción corta..." />
+                    </label>
+
+                    <div style="display:flex;gap:10px;flex-wrap:wrap">
+                        <button id="saveProductBtn" class="btn btn-primary">Guardar (crear/actualizar)</button>
+                        <button id="clearFormBtn" class="btn btn-ghost">Limpiar</button>
+                    </div>
+
+                    <hr class="sep" />
+
+                    <div style="display:flex;gap:10px;flex-wrap:wrap">
+                        <button id="exportBtn" class="btn">Exportar productos (JSON)</button>
+                        <label class="btn" style="display:inline-flex;align-items:center;gap:8px;cursor:pointer">
+                            Importar JSON
+                            <input id="importFile" type="file" accept="application/json" hidden />
+                        </label>
+                        <button id="resetDefaultBtn" class="btn danger">Reset a products.json</button>
+                    </div>
+
+                    <p class="muted small" id="adminMsg"></p>
+                </div>
+            </div>
+
+            <h3 style="margin:16px 0 10px">Listado</h3>
+            <div id="adminList" class="admin-list"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <strong>Hecho por Arnold web - 2026</strong>
+    </footer>
+
+    <script type="module" src="js/admin.js"></script>
+</body>
+
+</html>

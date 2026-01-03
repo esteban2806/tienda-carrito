@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tienda con Carrito</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">🛒</span>
+      <img class="logo-img" src="img/logo.png" alt="Arnold Web" />
+      <h1>Tienda</h1>
+    </div>
+
+
+    <div class="actions">
+      <a class="btn btn-ghost" href="admin.html" title="Panel administrativo">Admin</a>
+
+      <button id="resetDemoBtn" class="btn btn-ghost" title="Restaurar productos por defecto">
+        Restaurar demo
+      </button>
+
+      <input id="searchInput" class="input" type="search" placeholder="Buscar producto..." />
+      <select id="categorySelect" class="input">
+        <option value="all">Todas las categorías</option>
+      </select>
+
+      <button id="cartButton" class="btn">
+        Carrito (<span id="cartCount">0</span>)
+      </button>
+    </div>
+
+  </header>
+
+  <main class="container">
+    <section>
+      <h2 class="section-title">Productos</h2>
+      <div id="productsGrid" class="grid"></div>
+      <p id="statusMsg" class="muted"></p>
+    </section>
+  </main>
+
+  <!-- Drawer del carrito -->
+  <aside id="cartDrawer" class="drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <h2 style="margin:0;font-size:18px">Tu carrito</h2>
+      <button id="closeCart" class="btn btn-ghost">Cerrar</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <div class="row">
+        <span>Subtotal</span>
+        <strong>S/ <span id="cartSubtotal">0.00</span></strong>
+      </div>
+
+      <button id="clearCart" class="btn btn-ghost">Vaciar carrito</button>
+      <button id="checkoutBtn" class="btn btn-primary">Comprar</button>
+    </div>
+  </aside>
+
+  <!-- Modal Checkout -->
+  <div id="modalBackdrop" class="backdrop hidden"></div>
+  <div id="checkoutModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-header">
+      <h2 style="margin:0;font-size:18px">Checkout</h2>
+      <button id="closeModal" class="btn btn-ghost">Cerrar</button>
+    </div>
+
+    <form id="checkoutForm" class="form">
+      <div class="two-col">
+        <label>
+          Nombre
+          <input class="input" name="name" required />
+        </label>
+        <label>
+          Email
+          <input class="input" name="email" type="email" required />
+        </label>
+      </div>
+
+      <label>
+        Dirección
+        <input class="input" name="address" required />
+      </label>
+
+      <div class="row">
+        <span>Total</span>
+        <strong>S/ <span id="checkoutTotal">0.00</span></strong>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Confirmar compra</button>
+
+      <p class="muted small">
+        Nota: sin backend, el pedido se guarda en este navegador (localStorage).
+      </p>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <strong>Hecho por Arnold web - 2026</strong>
+  </footer>
+
+  <script type="module" src="js/shop.js"></script>
+</body>
+
+</html>

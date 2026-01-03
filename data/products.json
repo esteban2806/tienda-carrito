@@ -1,0 +1,38 @@
+[
+  {
+    "id": "kid001",
+    "name": "Polo Niño Algodón",
+    "price": 25,
+    "image": "img/products/polo.jpg",
+    "category": "Ropa Niño",
+    "stock": 40,
+    "description": "Polo de algodón suave. Tallas 2 a 8."
+  },
+  {
+    "id": "kid002",
+    "name": "Pantalón Jogger Niño",
+    "price": 45,
+    "image": "img/products/jogger.jpg",
+    "category": "Ropa Niño",
+    "stock": 25,
+    "description": "Jogger cómodo para uso diario."
+  },
+  {
+    "id": "kid003",
+    "name": "Casaca Niño",
+    "price": 80,
+    "image": "img/products/casaca.jpg",
+    "category": "Abrigos",
+    "stock": 12,
+    "description": "Casaca abrigadora, ideal para frío."
+  },
+  {
+    "id": "kid004",
+    "name": "Vestido Niña",
+    "price": 55,
+    "image": "img/products/vestido.jpg",
+    "category": "Ropa Niña",
+    "stock": 18,
+    "description": "Vestido ligero, colores variados."
+  }
+]
