@@ -10,7 +10,7 @@ Pensado como **muestra de desarrollo** para publicar en **GitHub Pages**.
 ![Tienda](imagen/readme/02-tienda.png)
 
 **Carrito (panel lateral)**
-![Carrito](imagen/readme/03-carrito.png)
+![Carrito](imagen/readme/carrito.png)
 
 **Panel Administrativo**
 ![Admin](imagen/readme/04-admin.png)
