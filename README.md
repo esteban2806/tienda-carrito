@@ -6,6 +6,15 @@ Pensado como **muestra de desarrollo** para publicar en **GitHub Pages**.
 > ⚠️ Nota: es un proyecto **solo Frontend** (sin backend). Los cambios del panel admin se guardan en el navegador (localStorage).
 
 ---
+**Vista Tienda (Cliente)**
+![Tienda](imagen/readme/02-tienda.png)
+
+**Carrito (panel lateral)**
+![Carrito](imagen/readme/03-carrito.png)
+
+**Panel Administrativo**
+![Admin](imagen/readme/04-admin.png)
+
 
 ## Funcionalidades (Cliente / Tienda)
 
